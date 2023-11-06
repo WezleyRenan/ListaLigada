@@ -1,8 +1,10 @@
 package ArvoreBinariaDeBuscaProva;
 
-public class ArvoreBinaria extends Arvore {
+public class ArvoreBinaria extends Arvore implements IArvoreBinaria {
 
     // percorrer por Profundidade
+    public No raiz;
+
     @Override
     public void preOrdem(No no) {
         if (no != null) {
@@ -44,12 +46,12 @@ public class ArvoreBinaria extends Arvore {
             No ElementoAtual = nivelAtual;
             while (ElementoAtual != null) {
                 System.out.print(ElementoAtual.getValor() + " ");
-                if (ElementoAtual.getEsquerdo != null) {
-                    nivelAtual = ElementoAtual.getEsquerdo;
+                if (ElementoAtual.getEsquerdo() != null) {
+                    nivelAtual = ElementoAtual.getEsquerdo();
                 }
-                ElementoAtual = ElementoAtual.getDireito;
+                ElementoAtual = ElementoAtual.getDireito();
             }
-            nivelAtual = nivelAtual.direita;
+            nivelAtual = nivelAtual.getDireito();
         }
     }
 

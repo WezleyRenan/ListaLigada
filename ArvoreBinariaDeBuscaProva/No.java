@@ -7,8 +7,8 @@ public class No implements INo {
 
     public No(int valor) { // construtor
         this.valor = valor;
-        this.esquerda = null; // Inicializado como nulo, pois ainda não temos um filho esquerdo
-        this.direita = null; // Inicializado como nulo, pois ainda não temos um filho direito
+        this.esquerdo = null; // Inicializado como nulo, pois ainda não temos um filho esquerdo
+        this.direito = null; // Inicializado como nulo, pois ainda não temos um filho direito
     }
 
     public void setValor(int valor) {

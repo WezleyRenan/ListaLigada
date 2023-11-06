@@ -10,5 +10,5 @@ public interface IArvoreBinaria extends IArvore {
     void posOrdem(No no);
 
     // percorrer Largura;
-    void percorrerLargura(No no);
+    void percorrerLargura();
 }

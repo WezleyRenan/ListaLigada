@@ -1,6 +1,6 @@
 package ArvoreBinariaDeBuscaProva;
 
-public interface INo extends Comparable<T> {
+public interface INo {
 
     void setValor(int valor);
 
