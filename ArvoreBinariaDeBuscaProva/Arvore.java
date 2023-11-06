@@ -2,17 +2,15 @@ package ArvoreBinariaDeBuscaProva;
 
 public class Arvore implements IArvore {
 
-    private No raiz;
-    private int altura;
+    protected No raiz;
+
+    public Arvore(){
+        raiz = null;
+    }
 
     @Override
-    public void inserir(int valor) {
-        try {
-            inserirRecursivo(raiz, valor);
-        } catch (MesmoValorException e) {
-            // TODO Auto-generated catch block
-            e.getMessage();
-        }
+    public void inserir(int valor) throws MesmoValorException {
+        inserirRecursivo(raiz, valor);
     }
 
     public No inserirRecursivo(No raiz, int valor) throws MesmoValorException {
@@ -33,11 +31,7 @@ public class Arvore implements IArvore {
 
     @Override
     public No remover(int valor) throws NoInexistenteException {
-        if (removerRecursivo(raiz, valor) == null) {
-            throw new NoInexistenteException("nenhum No encontrado");
-        }
         return removerRecursivo(raiz, valor);
-
     }
 
     public No removerRecursivo(No raiz, int valor) {

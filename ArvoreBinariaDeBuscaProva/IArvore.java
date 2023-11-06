@@ -2,7 +2,7 @@ package ArvoreBinariaDeBuscaProva;
 
 public interface IArvore {
 
-    void inserir(int valor);
+    void inserir(int valor) throws MesmoValorException;
 
     No remover(int valor) throws NoInexistenteException;
 

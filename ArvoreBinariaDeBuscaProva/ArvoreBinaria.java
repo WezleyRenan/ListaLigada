@@ -3,7 +3,6 @@ package ArvoreBinariaDeBuscaProva;
 public class ArvoreBinaria extends Arvore implements IArvoreBinaria {
 
     // percorrer por Profundidade
-    public No raiz;
 
     @Override
     public void preOrdem(No no) {
